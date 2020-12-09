@@ -1,24 +1,92 @@
 <!DOCTYPE html>
+<html lang="en-US">
 <head>
-    <title>My Site</title>
+    <title>Xavier De Cardenas</title>
     <link rel='stylesheet' type='text/css' href="style.css">
     <script src="script.js"></script>
 </head>
 <body> 
+    <div id="main-nav" class="navbar">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#about-me" class="scrollto">About Me</a>
+                </li>
+                <li>
+                    <a href="#projects" class="scrollto">Projects</a>
+                </li>
+                <li>
+                    <a href="#experience" class="scrollto">Experience</a>
+                </li>
+                <li>
+                    <a href="contact" class="scrollto">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--End of Navbar-->
     <div class="mainbody">
-        <h2 id="name">Xavier De Cardenas</h2>
-        <span id="intro">
-        <p>I am Web Developer now</p>
-        <p>As you can see, I web develop. When I web develop I make web sites that are very sick.</p>
-        <p>When we web develop, I web develop very good.</p>
-        <br>
-        <p>Thank you for your time and patience in this matter and I'll get back to you whenever.</p>
-        </span>
-
+        <section id="intro">
+        <h2 id="name">Hello, I'm Xavier De Cardenas</h2>
+        <p>An adaptable and fervent full stack developer with a broad and diverse set of experience</p>
+        </section>
+        <section id="about-me">
+            <h3>About me</h3>
+            <p>Based in New York City, I have a diversified background in front-end and back-end development, mobile, and game development. With a professional background in live television and broadcast services and operations of hardware and software.</p>
+        </section>
+        <section id="projects">
+            <h3>Projects</h3>
+            <ul> <!--Should also include descriptions of the projects include technologies used, client-side/server-side, and your process throughout-->
+                <li>Project 1</li>
+                <li>Project 2</li>
+                <li>Project 3</li>
+            </ul>
+        </section>
+        <section id="experience">
+            <h3>Experience</h3>
+            <div id="exp-list">
+                <ul> <!--Maybe can include pictures/logos here-->
+                    <li id="exp-languages">Technologies
+                        <li>Javascript</li>
+                        <li>Python</li>
+                        <li>PHP</li>
+                        <li>C#</li>
+                        <li>React</li>
+                        <li>jQuery</li>
+                        <li>Bootstrap</li>
+                        <li>Node.js</li>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>JSON</li>
+                        <li>XML</li>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <form id="contact-form" action="contact.php" method="post">
+                    <div class="form-data">
+                        <label for="contact-name">Name</label>
+                        <input id="contact-name" name="contactName" type="text" placeholder="Name" data-error-empty="*Enter your name">
+                        <label for="contact-email">Email</label>
+                        <input id="contact-email" name="contactEmail" type="text" placeholder="Email" data-error-empty="*Enter your email">
+                        <textarea id="contact-message" name="comments" row="1" placeholder="Message" data-error-empty="*Enter a message">
+                        </textarea>
+                    </div>
+                    <button id="submit-button" name="submit" type="submit" data-error-message="Error!" data-sending-message="Sending.." data-ok-message="Message Sent!">
+                        "Send Message"
+                    </button>
+                    <input type="hidden" name="submitted" id="submitted" value="true">
+                </form>
+            </div>
+        </section>
+    </div>
         <div id="page">
             <button type="button" onclick="location.href='about.html';">About Me</button>
         </div>
     </div>
-    <footer>Made by X</footer>
+    <footer>Xavier De Cardenas</footer>
 </body>
 </html>
