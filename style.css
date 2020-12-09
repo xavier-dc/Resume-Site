@@ -5,19 +5,31 @@ h2 {
     align-items: center;
 }
 
+.nav, .navbar-nav {
+    display: block;
+    text-align: center;
+}
+
 p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 #name {
     display: flex;
     justify-content: center;
     align-self: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-data {
+    display: flex;
+    flex-flow: column;
+    place-content: center;
+    margin-inline-start: 25%;
+    margin-inline-end: 25%;
+    padding: 2vw;
 }
 
 .mainbody {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
     min-height: 90vh;
     align-items: center;
@@ -27,10 +39,8 @@ p {
 
 #intro {
     display: grid;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content: center;
     align-self: center;
-    background-image: linear-gradient(rgb(216, 216, 216), rgb(243, 243, 243));
     margin-left: 10%;
     margin-right: 10%;
 }
