@@ -1,8 +1,18 @@
 Wrap all content at about 70% for desktop
 and 90% for mobile
 
+.container { width: 70% }
+
+Changing things dependin gon screen size = css media queries
+
 For About Me section.. make it 70% to keep it from being one long line of text.
 
 play around with container size anywhere from 80 -50% but recommend 70% width across the whole site.
 
 gives some padding to the side and brings content into the center.
+
+----------
+Can remove contact form - since having your email out in the internet can open you up to vulnerabilities... bots,
+unwanted emails, malware in emails, spam, etc.
+----------
+

@@ -16,6 +16,11 @@ h2 {
     background-color: white;
 }
 
+.main-container {
+    margin: 0 auto;
+    width: 70%;
+}
+
 .center {
     display:flex;
     text-align: center;
