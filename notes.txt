@@ -8,5 +8,7 @@ Changing things dependin gon screen size = css media queries
 -instead of contact section need another replacement section. Maybe game development, WIP, or a seperate section for Maybe
 broadcast experience? (as long as it's relevant).
 
+-Do Not display mobile apps I've made, since they have nothing to do with web development
+
 ----------------------------------
 Include logos for Technologies sections to make it look nice
