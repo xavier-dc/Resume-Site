@@ -12,6 +12,10 @@ h2 {
     justify-content: center;
 }
 
+#main-nav {
+    background-color: white;
+}
+
 .center {
     display:flex;
     text-align: center;
