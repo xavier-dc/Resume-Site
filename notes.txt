@@ -1,4 +1,8 @@
 Wrap all content at about 70% for desktop
 and 90% for mobile
 
-For About Me section..
+For About Me section.. make it 70% to keep it from being one long line of text.
+
+play around with container size anywhere from 80 -50% but recommend 70% width across the whole site.
+
+gives some padding to the side and brings content into the center.
