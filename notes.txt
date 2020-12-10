@@ -12,3 +12,5 @@ broadcast experience? (as long as it's relevant).
 
 ----------------------------------
 Include logos for Technologies sections to make it look nice
+
+Consider media queries for being able to change CSS properties/transitions
