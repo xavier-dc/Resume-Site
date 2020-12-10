@@ -1,0 +1,4 @@
+Wrap all content at about 70% for desktop
+and 90% for mobile
+
+For About Me section..
