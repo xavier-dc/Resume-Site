@@ -42,8 +42,8 @@ h2 {
 }
 
 .img-resize {
-    max-width: 150px;
-    max-height: 100px;
+    width: 150px;
+    height: 100px;
 }
 
 .nav, .navbar-nav {
