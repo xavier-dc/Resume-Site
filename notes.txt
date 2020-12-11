@@ -5,7 +5,7 @@ Changing things dependin gon screen size = css media queries
 
 -Seems like the "scrollto" function is going too far into the page, cutting off the actual headers.
 
--instead of contact section need another replacement section. Maybe game development, WIP, or a seperate section for Maybe
+-instead of contact section need another replacement section. Maybe WIP, or a seperate section for Maybe
 broadcast experience? (as long as it's relevant).
 
 -Do Not display mobile apps I've made, since they have nothing to do with web development
@@ -17,3 +17,8 @@ Consider media queries for being able to change CSS properties/transitions
 
 --When you hover over the projects, it auto-plays and shows a short clip of what the website
 does.
+
+-----------------------------------
+TECHNOLOGIES:
+-Include Git/Github
+
