@@ -16,6 +16,10 @@ h2 {
     background-color: white;
 }
 
+.text-left {
+    text-align: left;
+}
+
 .main-container {
     margin: 0 auto;
     width: 75%;
