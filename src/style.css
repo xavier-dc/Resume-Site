@@ -124,13 +124,13 @@ h2 {
     padding-top: 50vh;
 }
 
-@media(max-width:1120px) {
+@media(max-width:1200px) {
     .intro {
         padding-top: 40vh;
     }
 }
 
-@media (max-width:591px) {
+@media (max-width:600px) {
     .intro {
         padding-top: 20vh;
     }
