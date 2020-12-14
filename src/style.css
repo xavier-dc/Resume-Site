@@ -82,12 +82,58 @@ h2 {
     text-align: center;
 }
 
+#about-me h3{
+    font-size: 50px;
+}
+
+#about-me p{
+    font-size: 25px;
+}
+
 #intro {
     display: grid;
     justify-content: center;
     align-self: center;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+#projects h3{
+    font-size: 50px;
+}
+
+#introduction{
+    display:block;
+    position: relative;
+    background-image: url("../imgs/WorksBySparker/X_on_a_bench.jpg");
+    background-size:cover;
+    background-position: 0, 150px;
+    color:rgba(0, 0, 0, 0.116);
+    height: 90vh;
+}
+
+/* @media (max-width: 400px) {
+    .intro {
+        padding-top: 40vh;
+    }
+} */
+
+.intro {
+    font-size: 42px; 
+    text-align: bottom; 
+    padding-top: 50vh;
+}
+
+@media(max-width:1120px) {
+    .intro {
+        padding-top: 40vh;
+    }
+}
+
+@media (max-width:591px) {
+    .intro {
+        padding-top: 20vh;
+    }
 }
 
 #page {
