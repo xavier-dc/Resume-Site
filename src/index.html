@@ -19,9 +19,12 @@
             var scrollval = $(document).scrollTop();
             var combined = $("#introduction").innerHeight() + $("#about-me").innerHeight();
 
+            console.log($("#about-me").innerHeight());
+            console.log("scroll -> " + scrollval);
+
             scrollval >= 0 ? $("#about-me").show(1500) : $("#about-me").hide();
-            scrollval >= 400 ? $("#projects").show(1000) : $("#projects").hide();
-            scrollval >= 2300 ? $("#technologies").show("slow") : $("#technologies").hide();
+            scrollval >= ($("#about-me").innerHeight() - 10) ? $("#projects").show(1000) : $("#projects").hide();
+            scrollval >= ($("#projects").innerHeight() - 10) ? $("#technologies").show("slow") : $("#technologies").hide();
         })
     </script>
 </head>
