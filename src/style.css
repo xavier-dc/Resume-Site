@@ -63,6 +63,7 @@ h2 {
     justify-content: center;
     align-self: center;
     color: white;
+    opacity: 0;
 }
 
 .form-data {
@@ -92,36 +93,41 @@ h2 {
 
 #intro {
     display: grid;
+    position: relative;
     justify-content: center;
     align-self: center;
     margin-left: 10%;
     margin-right: 10%;
+    opacity: 1;
+    transition:opacity .5s ease-out .5s, transform .5s ease-out .3s;
 }
 
 #projects h3{
     font-size: 50px;
 }
 
-#introduction{
+#introduction {
     display:block;
     position: relative;
-    background-image: url("../imgs/WorksBySparker/X_on_a_bench.jpg");
-    background-size:cover;
-    background-position: 0, 150px;
-    color:rgba(0, 0, 0, 0.116);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../imgs/WorksBySparker/X_sitting_Chelsea_NYC.jpg');
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size:  cover;
+    -o-background-size: cover;
+    background-position: 0px;
     height: 90vh;
+    width: 100%;    
 }
 
-/* @media (max-width: 400px) {
-    .intro {
-        padding-top: 40vh;
-    }
-} */
+.main-body {
+    height:100%;
+    width:100%;
+}
 
 .intro {
     font-size: 42px; 
-    text-align: bottom; 
-    padding-top: 50vh;
+    text-align: center; 
+    padding-top: 40vh;
 }
 
 @media(max-width:1200px) {
@@ -133,6 +139,9 @@ h2 {
 @media (max-width:600px) {
     .intro {
         padding-top: 20vh;
+    }
+    .main-container {
+        width: 100%;
     }
 }
 

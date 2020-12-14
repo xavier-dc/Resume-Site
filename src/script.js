@@ -1,3 +1,3 @@
-const button = document.querySelector("#page");
+const intro = document.querySelector('#introduction');
 
-console.log(button);
+console.log(intro);

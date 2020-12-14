@@ -6,6 +6,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+                $("#name, h3, p").animate({
+                    opacity: 1
+            }, 1000);
+        })
+
+        $(document).scroll(function () {
+            var windowheight = $(window).innerHeight();
+            var scrollval = $(document).scrollTop();
+            var combined = $("#introduction").innerHeight() + $("#about-me").innerHeight();
+
+            scrollval >= 0 ? $("#about-me").show(1500) : $("#about-me").hide();
+            scrollval >= 400 ? $("#projects").show(1000) : $("#projects").hide();
+            scrollval >= 2300 ? $("#technologies").show("slow") : $("#technologies").hide();
+        })
+    </script>
 </head>
 <body>
     <!--NAVBAR-->
@@ -38,23 +56,26 @@
     </div>
     <!--End of Navbar-->
 
+    <!--INTRODUCTION-->
     <div class="mainbody">
-        <!--INTRODUCTION-->
-        <section id="introduction" class="position-relative overflow-hidden col-m-8 p-md-5 text-center">
-            <h2 id="name" class="col-m-8" style="font-size: 90px; padding-top: 5px;">Hi, I'm Xavier De Cardenas</h2>
-            <p id="name" class="intro shadow">An adaptable and passionate full stack developer with a broad and diverse set of experience</p>
-        </section>
-        <!--ABOUT ME-->
+            <section id="introduction" class="position-relative overflow-hidden">
+                <div class="intro-text intro col-m-8">
+                    <h2 id="name" style="font-size: 90px;">Hi, I'm Xavier De Cardenas</h2>
+                    <p id="name" style="font-size: 35px;">An adaptable and passionate full stack developer with a broad and diverse set of experience</p>
+                </div>
+            </section>
+    <!--ABOUT ME-->
         <section id="about-me" class="position-relative overflow-hidden p-5 p-md-5 m-md-3 bg-light">
             <h3>About Me</h3>
-            <p class="text-left m-3">Based in New York City, I have experience in front-end, back-end, mobile, and game development. 
-                My background in live television and online broadcast includes a strong command of both hardware and software, and directly informs my current skillset. 
-                <br><br>
-                For the past 8 years, I’ve used my hybrid broadcast and web development skills to optimize workflow in a live television landscape. 
-                With an emphasis on streamlined problem solving, I work closely with clients to improve efficiency through my unique perspective on web development.</p>
-            </section>
+                <p class="text-left m-3">Based in New York City, I have experience in front-end, back-end, mobile, and game development. 
+                    My background in live television and online broadcast includes a strong command of both hardware and software, and directly informs my current skillset. 
+                    <br><br>
+                    For the past 8 years, I’ve used my hybrid broadcast and web development skills to optimize workflow in a live television landscape. 
+                    With an emphasis on streamlined problem solving, I work closely with clients to improve efficiency through my unique perspective on web development.
+                </p>
+        </section>
         <div class="main-container">
-        <section id="projects" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+        <section id="projects" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-light text-center">
         <!--MY PROJECTS-->
             <h3 class="pb-2">Projects</h3>
             <ul class="row p-2 justify-content-center mx-auto "> <!--Should also include descriptions of the projects include technologies used, client-side/server-side, and your process throughout-->
