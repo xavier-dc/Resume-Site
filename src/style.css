@@ -151,6 +151,12 @@ h2 {
     transition: all .5s, ease-out .2s;
 }
 
+.border-radius {
+    border-radius: 10px 50px 10px;
+    background-color: rgba(207, 207, 207, 0.733);
+    padding: 20px;
+}
+
 @media(max-width:1200px) {
     .intro {
         padding-top: 40vh;
@@ -180,4 +186,6 @@ footer {
     justify-content: center;
     align-self: center;
     font-size: 80%;
+    padding: 10px;
+    margin: 10px;
 }

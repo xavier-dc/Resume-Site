@@ -23,7 +23,7 @@ $('#technologies-click').click(function() {
 })
 
 })
-//document ready ends
+//---------document ready ends
 
 $(document).scroll(function () {
 var scrollval = $(document).scrollTop();
@@ -32,7 +32,7 @@ scrollval >= 0 ? $("#about-me").animate({
         top:"-10px",
 }, 2000) : $("#about-me").fadeOut(1);
 
-scrollval >= ($("#about-me").innerHeight() - 10) ? $("#projects").fadeIn(1000) : $("#projects").fadeOut(1);
+scrollval >= ($("#about-me").innerHeight() - 10) ? $("#projects").fadeIn(500) : $("#projects").fadeOut(1);
 
-scrollval >= ($("#projects").innerHeight() - 10) ? $("#technologies").show("slow") : $("#technologies").fadeOut(1);
+scrollval >= ($("#projects").innerHeight() - 10) ? $("#technologies").show(500) : $("#technologies").fadeOut(1);
 })
