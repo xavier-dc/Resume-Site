@@ -10,16 +10,30 @@ jQuery.fn.extend({
         return this.each(function() {
             $(this).click(function() {
                 var pageId = $(this).attr("page");
-                $('#'+pageId).hide(0);
-                $('#'+pageId).show(1000);
-                $('html, body').animate({ scrollTop: $("#"+pageId).offset().top}, 100);
+                $('#'+pageId).fadeIn(0);
+                $('html, body').animate({ scrollTop: $("#"+pageId).offset().top -50}, 100);
             });
         });
     }
 });
 
+// $('h1').each(function() {
+//     var y = $(document).scrollTop();
+//     var t = $(this).parent().offset().top;
+//     if (y > t) {
+//         $(this).fadeIn()
+//     } else {
+//         $(this).fadeOut();
+//     }
+// });
+
+$('#home-click').reveal();
 $('#aboutme-click').reveal();
 $('#projects-click').reveal();
+$('#technologies-click').click(function() {
+    $('#projects').fadeIn(0);
+})
+$('#technologies-click').reveal();
 
 // $('#aboutme-click').click(function() {
 //     var pageId = $(this).attr("page");
@@ -42,14 +56,15 @@ $('#projects-click').reveal();
 })
 //---------document ready ends
 
-// $(document).scroll(function () {
-// var scrollval = $(document).scrollTop();
+$(document).scroll(function () {
+var scrollval = $(document).scrollTop();
+var height = $(window).height();
 
-// scrollval >= 0 ? $("#about-me").animate({
-//         top:"-10px",
-// }, 2000) : $("#about-me").fadeOut(100);
+scrollval >= 0 ? $("#about-me").animate({
+        top:"-10px",
+}, 2000) : $("#about-me").fadeOut(100);
 
-// scrollval >= ($("#about-me").innerHeight() - 10) || scrollval <= ($('#projects').innerHeight() + 10) ? $("#projects").fadeIn(500) : $("#projects").fadeOut(100);
+height - scrollval <= 1000 ? $("#projects").fadeIn(1000) : $('#projects').fadeOut();
 
-// scrollval >= ($("#projects").innerHeight() - 10) || scrollval <= ($('#technologies').innerHeight() + 10) ? $("#technologies").show(1000) : $("#technologies").fadeOut(100);
-// })
+height - scrollval <= 1 ? $("#technologies").show(500) : $('#technologies').fadeOut();
+})
