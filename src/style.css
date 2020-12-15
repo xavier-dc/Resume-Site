@@ -22,7 +22,6 @@ h2 {
 
 .main-container {
     margin: 0 auto;
-    width: 75%;
 }
 
 .image-container {
@@ -160,6 +159,9 @@ h2 {
 @media(max-width:1200px) {
     .intro {
         padding-top: 40vh;
+    }
+    .main-container{
+        width: 100%;
     }
 }
 
