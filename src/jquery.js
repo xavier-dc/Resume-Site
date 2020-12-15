@@ -4,6 +4,18 @@ $(document).ready(function() {
         opacity: 1
 }, 2000);
 
+//----------attempting to create a custom jQuery method
+jQuery.fn.extend({
+    reveal: function(id) {
+        return this.each(function() {
+            var pageId = $(id).attr("page");
+            this.show(.01);
+            $('html, body').animate({ scrollTop: $("#"+pageId).offset().top}, 100);
+            alert("custom function called");
+        });
+    }
+});
+
 $('#aboutme-click').click(function() {
     var pageId = $(this).attr("page");
     $('#about-me').show(.01);
