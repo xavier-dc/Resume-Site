@@ -3,16 +3,36 @@ $(document).ready(function() {
         padding: "+8px",
         opacity: 1
 }, 2000);
+
+$('#aboutme-click').click(function() {
+    var pageId = $(this).attr("page");
+    $('#about-me').show(.01);
+    $('html, body').animate({ scrollTop: $("#"+pageId).offset().top}, 100);
+});
+
+$('#projects-click').click(function() {
+    var pageId = $(this).attr("page");
+    $('#projects').show(.01);
+    $('html, body').animate({ scrollTop: $("#"+pageId).offset().top}, 100);
 })
+
+$('#technologies-click').click(function() {
+    var pageId = $(this).attr("page");
+    $('#technologies').show(.01);
+    $('html, body').animate({ scrollTop: $("#"+pageId).offset().top}, 100);
+})
+
+})
+//document ready ends
 
 $(document).scroll(function () {
 var scrollval = $(document).scrollTop();
 
 scrollval >= 0 ? $("#about-me").animate({
         top:"-10px",
-}, 2000) : $("#about-me").hide();
+}, 2000) : $("#about-me").fadeOut(1);
 
-scrollval >= ($("#about-me").innerHeight() - 20) ? $("#projects").fadeIn(1000) : $("#projects").hide();
+scrollval >= ($("#about-me").innerHeight() - 10) ? $("#projects").fadeIn(1000) : $("#projects").fadeOut(1);
 
-scrollval >= ($("#projects").innerHeight() - 10) ? $("#technologies").show("slow") : $("#technologies").hide();
+scrollval >= ($("#projects").innerHeight() - 10) ? $("#technologies").show("slow") : $("#technologies").fadeOut(1);
 })
