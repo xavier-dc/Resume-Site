@@ -87,8 +87,20 @@ h2 {
     font-size: 50px;
 }
 
+.about {
+    display:grid;
+    background-size:cover;
+    height: 80vh;
+    width: 50vh;
+    background-position: 0px, -200px;
+}
+
 #about-me p{
     font-size: 25px;
+}
+
+#about-me {
+    top: 100px;
 }
 
 #intro {
@@ -128,6 +140,15 @@ h2 {
     font-size: 42px; 
     text-align: center; 
     padding-top: 40vh;
+}
+
+.zoom {
+    transition: all .5s, ease-out .2s;
+}
+
+.zoom :hover {
+    transform: scale(1.01);
+    transition: all .5s, ease-out .2s;
 }
 
 @media(max-width:1200px) {
