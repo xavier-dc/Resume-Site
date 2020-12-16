@@ -214,7 +214,7 @@ label {
     padding: 20px;
 }
 
-.dropdown-menu {
+.drop-menu {
     display: none;
 }
 
@@ -227,7 +227,22 @@ label {
     }
 }
 
-@media only screen and (max-width:800px) {
+@media (max-height: 1000px) {
+    #intro-text {
+        margin-top: 0!important;
+        padding-top: 0!important;        
+    }
+
+    #intro-text h2 {
+        font-size: 60px!important;
+    }
+
+    #intro-text p {
+        font-size: 30px!important;
+    }
+}
+
+@media only screen and (max-width:1000px) {
     .intro {
         padding-top: 20vh;
     }
@@ -235,9 +250,10 @@ label {
         width: 100%;
     }
 
-    .dropdown-menu {
+    .drop-menu {
         display: block!important;
         width: 100%;
+        padding: 0!important;
         margin: 0!important;
     }
 
@@ -267,10 +283,6 @@ label {
         display: block;
         border-bottom: 1px solid #EAEAEB;
         margin: 0;
-    }
-
-    #toggle:checked + .menu {
-        display: block;
     }
 }
 
