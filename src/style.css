@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 h2 {
     display: flex;
     flex-direction: initial;
@@ -37,6 +41,37 @@ h2 {
     justify-content: center;
     justify-self: center;
     align-content: center;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
+.from-left {
+    grid-column: 2/3;
+    transform: translateX(-50%);
+}
+
+.from-right {
+    grid-column: 3/4;
+    transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+    transition: opacity .2s ease-in .5s, transform 400ms, ease-in .5s;
+    opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .no-underline {
@@ -142,12 +177,12 @@ h2 {
 }
 
 .zoom {
-    transition: all .5s, ease-out .2s;
+    transition: all .5s, ease-out .5s;
 }
 
 .zoom :hover {
     transform: scale(1.01);
-    transition: all .5s, ease-out .2s;
+    transition: all .5s, ease-out .5s;
 }
 
 .border-radius {
