@@ -227,7 +227,7 @@ label {
     }
 }
 
-@media (max-height: 1000px) {
+@media (max-height: 800px) {
     #intro-text {
         margin-top: 0!important;
         padding-top: 0!important;        
