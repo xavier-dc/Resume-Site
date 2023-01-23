@@ -16,5 +16,4 @@ $('#toggle').on('click', function() {
         $('.menu').slideDown();
     }
 })
-
 })

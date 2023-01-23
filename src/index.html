@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>Xavier De Cardenas</title>
-    <link rel='icon' href='../imgs/logos/javascript.svg' type="image/x-icon"> <!--placeholder for my logo-->
-    <link rel='stylesheet' type='text/css' href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xavier De Cardenas</title>
+    <link rel='icon' href='../imgs/logos/javascript.svg' type="image/x-icon"> <!--placeholder for my logo-->
+    <link rel='stylesheet' type='text/css' href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src="observer.js" defer></script>
+    <script src="/js/observer.js" defer></script>
+    <script src="/js/carousel.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="dropdownmenu.js"></script>
+    <script src="/js/dropdownmenu.js"></script>
 </head>
 <body>
     <!--NAVBAR-->
-    <div id="main-nav" class="navbar shadow sticky-top w-100 ">
+    <div id="main-nav" class="navbar shadow sticky-top w-100">
         <div class="container top-nav d-flex flex-row flex-md-row sticky-top py-1 justify-content-center">
-            <ul class="nav navbar-nav w-100">
+            <ul class="nav navbar-nav w-500">
                 <div class="row">
                 <!--start of row 1-->
                     <li class="col py-2 ms-2">
@@ -40,8 +41,8 @@
                 </div>
             </ul>
         </div>
-        <div class="drop-menu sticky-top position-relative" style="font-size: x-large">
-            <label for="toggle" style="font-size: 60px; padding-top: 10px; padding-left: 30px; width: 100%;">&#9776;</label>
+        <div class="drop-menu sticky-top position-relative" style="font-size: medium">
+            <label for="toggle" style="font-size: 50px; padding-left: 30px; width: 100%;">&#9776;</label>
             <input type="checkbox" id="toggle"/>
             <div class="menu">
                 <a href="#" class="scrollto no-underline" id="home-click" page="intro-text">X</a>
@@ -56,58 +57,93 @@
 
     <!--INTRODUCTION-->
     <div class="mainbody">
-            <section id="introduction" class="position-relative overflow-hidden section1">
-                <div id="intro-text" class="intro-text intro col-m-8">
-                    <h2 id="name" style="font-size: 90px;">Hi, I'm Xavier De Cardenas</h2>
-                    <p id="name" style="font-size: 40px;">An adaptable and passionate full stack developer with a broad and diverse set of experience</p>
+            <section id="introduction" class="slider-container position-relative overflow-hidden">
+                <div class="inner-slider">
+                    <img class="slide" src="/imgs/X_Directing_BuildSeriesNYC.jpg">
+                    <img class="slide" src="/imgs/WorksBySparker/X_alley_NYC.jpg">
+                    <img class="slide" src="/imgs/WorksBySparker/X_headshot.jpg">
+                    <img class="slide" src="/imgs/WorksBySparker/X_leaning_Chelsea_NYC.jpg">
+                    <img class="slide" src="/imgs/Directing_At_MLG.jpg">
+                    <img class="slide" src="/imgs/WorksBySparker/X_on_a_bench.jpg">
+                </div>
+                <div id="intro-text" class="col-m-8 fade-in fade-in.appear">
+                        <h2 id="name">Hi! I'm Xavier De Cardenas</h2>
+                        <p id="name">An adaptable and passionate full stack developer with a broad and diverse set of experience</p>
                 </div>
             </section>
     <!--ABOUT ME-->
-        <section id="about-me" class="position-relative overflow-hidden p-5 p-md-5 m-md-3 bg-light fade-in">
-                <div class="col">
+        <section id="about-me" class="position-relative overflow-hidden p-md-5 bg-light fade-in">
+                <div class="col" id="about-me-paragraph">
                     <h3 class="col-m-8 py-2">About Me</h3>
+                    <img class="about-me-img rounded-img" src="/imgs/WorksBySparker/X_headshot.jpg" alt="#">
                         <p class="col">Based in New York City, I have experience in front-end, back-end, mobile, and game development. 
-                            My background in live television and online broadcast includes a strong command of both hardware and software, and directly informs my current skillset. 
-                            <br><br>
-                            For the past 8 years, I’ve used my hybrid broadcast and web development skills to optimize workflow in a live television landscape. 
-                            With an emphasis on streamlined problem solving, I work closely with clients to improve efficiency through my unique perspective on web development.
+                            My background in live TV and online broadcast includes a strong command of both hardware and software, and directly informs my current skillset. 
+                            I'm a musician with a passion for gear and new technology, and I love building tools to make people's lives easier.
                         </p>
+                </div>
+                <div class="social-links d-flex w-50 mt-5 center">
+                    <ul class="d-flex flex-col col justify-content-around">
+                        <li class="instagram"><a href="https://instagram.com/xpialadocious"><img src="/imgs/socialmedialogos/instagram-logo.svg"></a></li>
+                        <li class="facebook"><a href="https://www.facebook.com/xavier.decardenas"><img src="/imgs/socialmedialogos/facebook.svg"></a></li>
+                        <li class="linkedIn"><a href="https://www.linkedin.com/in/xavier-de-cardenas-7b949055/"><img src="/imgs/socialmedialogos/linked-in.svg"></a></li>
+                        <li class="github"><a href="https://github.com/xavier-dc"><img src="/imgs/socialmedialogos/github.svg"></a></li>
+                        <li class="itch.io"><a href="https://xavierdc.itch.io/"><img src="/imgs/socialmedialogos/itchio-black.svg"></a></li>
+                        <li class="music"><a href="https://www.xavierdc.com/"><img src="/imgs/socialmedialogos/musical-note.svg"></a></li>
+                    </ul>
                 </div>
         </section>
         <div class="main-container">
     <!--MY PROJECTS-->
         <section id="projects" class="position-relative overflow-hidden p-3 m-md-3 bg-light text-center py-5" page="projects">
-            <h3 class="pb-2 py-5">Projects</h3>
-            <ul class="row p-2 justify-content-center mx-auto "> <!--Should also include descriptions of the projects include technologies used, client-side/server-side, and your process throughout-->
-                <a href="https://smart-brain-002.herokuapp.com/" class="no-underline zoom">
-                <div class="card col-md-9 d-inline-flex shadow p-3 ml-my-3 from-left">
-                    <img src="../imgs/React_FaceRecognition_Screenshot.jpg" class="card-img-top">
-                    <h5 class="card-title">CLARIFAI Facial Recognition</h5>
-                    <p class="card-text no-underline">A website that handles registering, point system, and sign-in of users and uses an API to detect faces in images. Created utilizing React, PostgreSQL, Heroku, HTML, CSS, Javascript, and numerous frameworks and libraries for styling and optimization as well as CLARIFAI's API</p>
-                </a>
+            <h3 class="pb-2">Projects</h3>
+            <ul class="row w-100 p-2 justify-content-center mx-auto"> <!--Should also include descriptions of the projects include technologies used, client-side/server-side, and your process throughout-->
+                <div class="card d-inline-flex shadow p-3 ml-my-3 from-left">
+                    <a href="https://smart-brain-002.herokuapp.com/" class="no-underline zoom">
+                            <img src="../imgs/React_FaceRecognition_Screenshot.jpg" class="card-img-top">
+                        </a>
+                        <h5 class="card-title">CLARIFAI Facial Recognition</h5>
+                        <p class="card-text no-underline">I built a website that handles registering, point system, and sign-in of users and uses an API to detect faces in images. Created utilizing React, PostgreSQL, Heroku, HTML, CSS, Javascript, and numerous frameworks and libraries for styling and optimization as well as CLARIFAI's API</p>
                 </div>
-                <a href="#" class="no-underline zoom">
-                <div class="card col-md-9 d-inline-flex shadow p-3 ml-my-3 from-right">
-                    <img src="../imgs/Crook_County.jpg" class="card-img-top">
-                    <h5 class="card-title">PHP Messaging</h5>
-                    <p class="card-text no-underline">Created a minimal messaging application using PHP to connect multiple individuals to a server and send/receive messages via ports.</p>
-                    </a>
+                <div class="card d-inline-flex shadow p-3 ml-my-3 from-right">
+                    <a href="https://fir-chat-46003.web.app/" class="no-underline zoom ">
+                            <img src="../imgs/React-Chat_SS.png" class="card-img-top">
+                        </a>
+                        <h5 class="card-title">React Messaging App</h5>
+                        <p class="card-text no-underline">I constructed a messaging application using React and Firebase to connect multiple individuals to a server and send/receive messages and reactions.</p>
                 </div>
-                <a href="#" class="no-underline zoom">
-                <div class="card col-md-9 d-inline-flex shadow p-3 ml-my-3 from-left">
-                    <img src="../imgs/central_park.jpg" class="card-img-top">
-                    <h5 class="card-title">Project 3</h5>
-                    <p class="card-text no-underline">Another example of me doing something interesting with MongoDB and MySQL using JSON and frameworks to stylize something.</p>
-                    </a>
+                <div class="card d-inline-flex shadow p-3 ml-my-3 from-left">
+                    <a class="no-underline zoom">
+                            <img src="../imgs/NYC_Pigeon_Capture.png" class="card-img-top">
+                        </a>
+                        <h5 class="card-title">Wildlife Pigeon Detection AI</h5>
+                        <p class="card-text no-underline">Using Yolov3, Python, and PyTorch, I made an AI that automatically captures and logs visits from NYC pigeons. </p>
+                </div>
+                <div class="card d-inline-flex shadow p-3 ml-my-3 from-right">
+                    <a href="https://gallery.fitbit.com/details/70b4ddf0-51a8-40b6-9acc-a0ac063c826b" class="no-underline zoom">
+                            <img src="../imgs/VV_1.png" class="card-img-top" style="width: auto; min-height: 300px; max-height: 900px;">
+                        </a>
+                        <h5 class="card-title">Radiant Pulse Fitbit Watch Face</h5>
+                        <p class="card-text no-underline">Using Fitbit Studio, Javascript, and Open-Meteo's open source weather API, I created a free watch face for Fitbit Versa 3 and Fitbit Sense with animations, calorie tracking, heart-monitoring, geolocation and weather reporting.</p>
+                </div>
+                <div class="card d-inline-flex shadow p-3 ml-my-3 from-left">
+                    <a href="#" class="no-underline zoom">
+                            <img src="" class="card-img-top">
+                        </a>
+                        <h5 class="card-title">Apartment Package Manager</h5>
+                        <p class="card-text no-underline">I created a package manager application using React that utilizes Express.js and File-stream to write JSON data. The app logs the time and date, and dynamically updates package drop-offs and pickups.</p>
                 </div>
             </ul>
         </section>
         <!--TECHNOLOGIES-->
         <section id="technologies">
-            <h3 style="font-size: 45px;">Technologies</h3>
+            <h3>Technologies</h3>
             <div id="tech-list" class="justify-content-center center w-100 bg-light from-left">
-                <div class="row w-100">
+                <div class="row w-80">
                     <div class="row">
+                        <div class="col">
+                            <img src="../imgs/logos/react.svg" class="img-resize m-3" style="padding-left: 20px;"> 
+                            <p>React</p>
+                        </div>
                         <div class="col">
                             <img src="../imgs/logos/javascript.svg" class="img-resize m-3">
                             <p>JavaScript</p>
@@ -120,15 +156,11 @@
                             <img src="../imgs/logos/css3.svg" class="img-resize m-3">
                             <p>CSS3</p>
                         </div>
-                        <div class="col">
-                            <img src="../imgs/logos/php.svg" class="img-resize m-3">
-                            <p>PHP</p>
-                        </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <img src="../imgs/logos/react.svg" class="img-resize m-3" style="padding-left: 20px;"> 
-                            <p>React</p>
+                            <img src="../imgs/logos/php.svg" class="img-resize m-3">
+                            <p>PHP</p>
                         </div>
                         <div class="col">
                             <img src="../imgs/logos/Node.js.svg" class="img-resize m-3">
@@ -160,27 +192,29 @@
                         <div class="col">
                             <img src="../imgs/logos/json.svg" class="img-resize m-3" style="padding-left: 25px;">
                             <p>JSON</p>                       
-                        </div>  
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-    <div class="empty border-radius">
+    <!-- <div class="empty border-radius">
         <h3>
         Concepts
         </h3>
-        <p>Mobile first, iterative design, ci/cd</p>
-    </div>
+        <p>Mobile first, Iterative Design, CI/CD</p>
+    </div> -->
         <!--CONTACT FORM CAN BE REMOVED ENTIRELY-->
-        <!-- <section id="contact">
-            <div class="container border border-dark rounded w-50 p-3">
-                <form id="contact-form" action="contact.php" method="post">
+        <br><br>
+        <section id="contact">
+            <div class="shadow border border-light rounded p-3">
+                <h2>Contact me</h2>
+                <form id="contact-form" action="/js/mail.php" method="post">
                     <div class="form-data">
                         <label for="contact-name">Name</label>
                         <input id="contact-name" name="contactName" type="text" placeholder="Name" data-error-empty="*Enter your name">
-                        <label for="contact-email">Email</label>
-                        <input id="contact-email" name="contactEmail" type="text" placeholder="Email" data-error-empty="*Enter your email">
-                        <textarea id="contact-message" name="comments" row="1" placeholder="Message" data-error-empty="*Enter a message">
+                        <label for="contact-email">Email address</label>
+                        <input id="contact-email" name="contactEmail" type="text" placeholder="Email" data-error-empty="*Enter your email" required>
+                        <textarea id="contact-message" name="message" row="1" placeholder="Message" data-error-empty="*Enter a message" required>
                         </textarea>
                     </div>
                     <div class="container-fluid">
@@ -194,13 +228,10 @@
                     </div>
                 </form>
             </div>
-        </section> -->
+        </section>
     </div>
-        <!-- <div id="page">
-            <button type="button" onclick="location.href='about.html';">About Me</button>
-        </div> -->
     </div>
-</div>
-    <footer> Xavier De Cardenas </footer>
-</body>
+    </div>
+        <footer>Xavier De Cardenas</footer>
+    </body>
 </html>
