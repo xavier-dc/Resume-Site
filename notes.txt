@@ -1,22 +1,6 @@
-Wrap all content at about 70% for desktop
-and 90% for mobile
-
-Changing things dependin gon screen size = css media queries
-
--Seems like the "scrollto" function is going too far into the page, cutting off the actual headers.
-
--instead of contact section need another replacement section. Maybe WIP, or a seperate section for Maybe
-broadcast experience? (as long as it's relevant).
-
--Do Not display mobile apps I've made, since they have nothing to do with web development
-
-----------------------------------
-Include logos for Technologies sections to make it look nice
-
-Consider media queries for being able to change CSS properties/transitions
-
---When you hover over the projects, it auto-plays and shows a short clip of what the website
-does.
+Projects section includes h3 inside the projects image! When you hover the image,
+the header fades away.
+Can be done with CSS.
 
 -----------------------------------
 TECHNOLOGIES:
