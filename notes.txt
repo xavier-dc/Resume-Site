@@ -1,8 +1,0 @@
-Projects section includes h3 inside the projects image! When you hover the image,
-the header fades away.
-Can be done with CSS.
-
------------------------------------
-TECHNOLOGIES:
--Include Git/Github
-
