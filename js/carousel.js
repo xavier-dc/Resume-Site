@@ -23,16 +23,17 @@ const checkBoundary = () => {
 };
 
 const fadeText = (transition) => {
+    console.log("fade text: ", transition)
     transition ? 
-    () => {
-    document.querySelectorAll('.slide').forEach(slide => slide.style.opacity = 1);
-    //Todo: intro text goes away...
-    document.querySelectorAll('#name').forEach(name => { name.style.opacity = 0; name.style.marginTop = '30px'; });
-    } : 
     () => {
     document.querySelectorAll('.slide').forEach(slide => slide.style.opacity = startingOpacity);
     //Todo: intro text reappears
     document.querySelectorAll('#name').forEach(name => { name.style.opacity = 1; name.style.marginTop = startingTransform });
+    } : 
+    () => {
+    document.querySelectorAll('.slide').forEach(slide => slide.style.opacity = 1);
+    //Todo: intro text goes away...
+    document.querySelectorAll('#name').forEach(name => { name.style.opacity = 0; name.style.marginTop = '30px'; });
     }
 }
 
