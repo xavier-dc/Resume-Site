@@ -1,8 +1,9 @@
 :root {
-    --carouselWidth: 238%;
+    --carouselWidth: 238.5%;
 }
 
 body {
+    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -20,11 +21,13 @@ img {
 
 .slide {
     /* -webkit-filter: brightness(70%); */
-    height: 1000px;
+    height: 100%;
     width: 100%;
     border-radius: 5px;
     opacity: 0.4;
     transition: opacity 0.8s ease-in-out;
+    min-width: 582px;
+    transform: translate(0, -30%);
 }
 
 .slider-container {
@@ -233,8 +236,9 @@ img {
 }
 
 #about-me-paragraph {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
+    max-width: 900px;
 }
 
 #intro {
@@ -261,8 +265,9 @@ img {
     -o-background-size: cover;
     background-position: 0px 0px;
     position: relative;
-    overflow: hidden;
-    width: 100vw;
+    width: 100%;
+    max-height: 550px;
+    /* overflow: hidden; */
 }
 
 #intro-text {
@@ -362,7 +367,7 @@ label {
     #intro-text {
         margin: 0 auto;
         margin-top: 20vh;
-        width: 50vw;
+        /* width: 50vw; */
     }
 
     #intro-text h2 {
@@ -458,6 +463,7 @@ footer {
 .social-links img {
     width: 40px;
     height: 40px;
+    margin-right: 1em;
 }
 
 .social-links > ul > li:hover {
