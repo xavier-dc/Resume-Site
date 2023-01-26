@@ -1,3 +1,7 @@
+:root {
+    --carouselWidth: 238%;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -51,7 +55,7 @@ img {
 
 .marquee2 {
     animation: marquee2 30s linear infinite;
-    left: 280%;
+    left: var(--carouselWidth);
 }
 
 @keyframes marquee {
@@ -62,14 +66,14 @@ img {
 
     to {
         /* transform: translate(-200%, 0); */
-        left: -280%;
+        left: calc(var(--carouselWidth) * -1);
     }
 }
 
 @keyframes marquee2 {
     from {
         /* transform: translate(200%, 0); */
-        left: 280%;
+        left: var(--carouselWidth);
     }
     to {
         /* transform: translate(0, 0); */
@@ -466,7 +470,20 @@ footer {
 }
 
 #contact {
-    background-color: #edeef1;
+    background-color: #fbfcff;
     max-width: 500px;
     margin: 0 auto;
+}
+
+.form-data > input {
+    border-radius: 20px;
+    border: 0.1px solid grey;
+    margin: 10px;
+    text-align: center;
+}
+
+.form-data > textarea {
+    border-radius: 8px;
+    border: 0.1px solid grey;
+    margin: 10px;
 }
