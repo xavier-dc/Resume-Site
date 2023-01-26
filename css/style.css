@@ -34,13 +34,47 @@ img {
 }
 
 .inner-slider {
-    width: 250%;
+    width: inherit;
     display: flex;
     /* gap: 10px; */
     pointer-events: none;
     position: absolute;
+    /* overflow-x: hidden; */
+    white-space: nowrap;
     top:0;
+}
+
+.marquee1 {
+    animation: marquee 30s linear infinite;
     left:0;
+}
+
+.marquee2 {
+    animation: marquee2 30s linear infinite;
+    left: 280%;
+}
+
+@keyframes marquee {
+    from {
+        /* transform: translate(0,0); */
+        left: 0%;
+    }
+
+    to {
+        /* transform: translate(-200%, 0); */
+        left: -280%;
+    }
+}
+
+@keyframes marquee2 {
+    from {
+        /* transform: translate(200%, 0); */
+        left: 280%;
+    }
+    to {
+        /* transform: translate(0, 0); */
+        left: 0%;
+    }
 }
 
 .container, li{
@@ -217,10 +251,14 @@ img {
 #introduction {
     background-color: black;
     background: linear-gradient(rgba(12, 11, 8, 0.667), rgba(2, 16, 18, 0.944));
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size:  cover;
     -o-background-size: cover;
     background-position: 0px 0px;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
 }
 
 #intro-text {
