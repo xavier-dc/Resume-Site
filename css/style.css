@@ -353,6 +353,17 @@ label {
     font-size: 22px!important;
 }
 
+#projects > ul > div > p a {
+    text-decoration: none;
+    color: rgb(79, 161, 216);
+}
+
+#projects > ul > div > p strong {
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color:rgb(0, 0, 0)
+}
+
 @media(max-width:1200px) {
     .main-container{
         width: 100%;
