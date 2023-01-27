@@ -513,3 +513,7 @@ footer {
     border: 0.1px solid grey;
     margin: 10px;
 }
+
+.form-data > textarea::placeholder {
+    text-align: center;
+}
