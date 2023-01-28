@@ -3,6 +3,7 @@ html, body {
     overflow-x: hidden;
     margin: 0;
     height: 100%;
+    background-color:rgb(230, 231, 235);
 }
 
 h2 {
@@ -10,6 +11,15 @@ h2 {
     flex-direction: initial;
     justify-content: center;
     align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+}
+
+p {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 img {
@@ -91,7 +101,7 @@ img {
 
 #main-nav {
     z-index: 5;
-    background-color: white;
+    background-color: rgb(236, 236, 236);
 }
 
 .top-nav {
@@ -175,7 +185,7 @@ img {
     display: flex;
     justify-content: center;
     align-self: center;
-    color: white;
+    color: rgb(235, 236, 239);
     transition: opacity 0.5s ease-in-out, margin-top 0.7s ease-in-out;
 }
 
@@ -194,6 +204,7 @@ img {
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color:rgb(230, 231, 235);
 }
 
 #about-me h3{
@@ -201,6 +212,7 @@ img {
 }
 
 .about-me-img {
+    background-image: cover;
     width: 150px;
     height: 150px;
 }
@@ -227,7 +239,7 @@ img {
 #about-me {
     /* background: linear-gradient(rgba(7, 7, 13, 0.751), rgba(2, 3, 10, 0.867)), url("/imgs/Directing_At_MLG.jpg");
     background-size:cover; */
-    top: 50px;
+    top: 60px;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -278,6 +290,11 @@ img {
     box-shadow: 0 5px 100px 5px black;
 }
 
+#technologies {
+    margin: 4em 0 auto;
+    background-color: #f8f9fa;
+}
+
 .main-body {
     height:100%;
     width:100%;
@@ -316,6 +333,11 @@ label {
     margin: 1em;
     width: 100%;
     height: 100%;
+}
+
+.card > p {
+    font-family: 'Noto sans';
+    font-size: 0.75rem;
 }
 
 .card > a {
@@ -377,14 +399,14 @@ label {
         margin-top: 20vh;
         /* width: 50vw; */
     }
-
+/* 
     #intro-text h2 {
         font-size: 38px!important;
-    }
+    } */
 
-    #intro-text p {
+    /* #intro-text p {
         font-size: 18px!important;
-    }
+    } */
 }
 
 @media only screen and (max-width:1000px) {
@@ -438,9 +460,19 @@ label {
         border-bottom: 1px solid #EAEAEB;
         margin: 0;
     }
+
+    .social-links {
+        width: 100%;
+        margin: 0 auto;
+    }
     
     .card {
         height: 100%!important;
+    }
+
+    #tech-list > div> div > div > img {
+        width: 80px;
+        height: 80px;
     }
 }
 
@@ -453,6 +485,15 @@ label {
     #projects > ul > .card {
         width: 100%;
         height: 600px;
+    }
+
+    .social-links {
+        width: 50%;
+    }
+
+    #tech-list > div> div > div > img {
+        width: 100px;
+        height: 100px;
     }
 }
 
@@ -476,13 +517,15 @@ footer {
     justify-content: center;
     align-self: center;
     font-size: 80%;
-    padding: 10px;
-    margin: 10px;
+    padding: 1px;
+    margin: 5px;
 }
 
 .social-links img {
-    width: 40px;
-    height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    min-width: 15px;
+    min-height: 15px;
     margin-right: 1em;
 }
 
@@ -493,6 +536,12 @@ footer {
 
 .social-links > ul > li {
     transition: transform 0.3s ease-in-out;
+    min-width: 10px;
+}
+
+.small {
+    width: 20px!important;
+    height: 20px!important;
 }
 
 #contact {
