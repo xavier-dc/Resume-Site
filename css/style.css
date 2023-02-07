@@ -50,13 +50,14 @@ img {
 
 .inner-slider {
     width: inherit;
+    background-size: cover;
     display: flex;
     /* gap: 10px; */
     pointer-events: none;
     position: absolute;
     /* overflow-x: hidden; */
     white-space: nowrap;
-    top:0;
+    top:100px;
 }
 
 .marquee1 {
@@ -442,7 +443,7 @@ label {
     }
 
     #introduction {
-        max-height: 550px;
+        max-height:550px;
     }
 
     #intro-text {
