@@ -16,7 +16,7 @@ h2 {
 }
 
 p {
-    font-family: 'Noto Sans', sans-serif;
+    /* font-family: 'Noto Sans', sans-serif; */
     font-weight: 100;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -265,7 +265,7 @@ img {
 }
 
 #projects h3{
-    font-size: 30px;
+    font-size: 40px;
 }
 
 #introduction {
@@ -348,8 +348,8 @@ label {
 }
 
 .card > p {
-    font-family: 'Noto sans';
-    font-size: 0.75rem;
+    /* font-family: 'Noto sans'; */
+    font-size: 1rem;
 }
 
 .card > a {
